@@ -7755,7 +7755,7 @@ audio {
         display: none;
     } */
      .main-header.auto-hide-header {
-        left: -30px;
+        left: -60px;
         top: -10px;
     }
     .slide-title {
