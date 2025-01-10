@@ -7757,8 +7757,11 @@ audio {
      .main-header.auto-hide-header {
         left: -30px;
         top: -10px;
-     }
-     .slide-title {
+    }
+    .slide-title {
         display: none;
-     }
+    }
+    .logo-light.bottom {
+        display: none;
+    }
 }
