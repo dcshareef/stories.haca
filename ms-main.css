@@ -7772,22 +7772,15 @@ audio {
     .bottomLogo {
         /* display: none; */
         max-width: 30%;
-        margin: auto;
-    }
-    /* .logo-light.bottom {
-        position: fixed;
-        right: 70px;
-        bottom: 30px;
-    }
-    .logo-light.bottom img {
-        height: 80px;
-    } */
-    .swiper-full-page .slider-nav .swiper-button-next svg,
-    .swiper-full-page .slider-nav .swiper-button-prev svg {
-        /* background-color: green; */
+        /* margin: auto; */
         position: relative;
-        width: 90%;
-        right: 30px;
-        bottom: 100px;
+        bottom: 45px;
+        left: 20px;
+    }
+    .swiper-full-page .slider-nav .swiper-button-prev {
+        top: -110px;
+    }
+    .swiper-full-page .slider-nav .swiper-button-next{
+        top: -110px;
     }
 }
