@@ -1963,7 +1963,7 @@ div.wpcf7-response-output {
     z-index: 9;
     top: 0;
     right: 0;
-    left: -100px;
+    left: 0px;
     -webkit-transition: 300ms ease;
     transition: 300ms ease;
     -webkit-transform: translateY(0%);
@@ -7663,6 +7663,14 @@ p iframe {
 audio {
     display: none;
 }
+.logo-light.bottom {
+    position: fixed;
+    right: 70px;
+    bottom: 30px;
+}
+.logo-light.bottom img {
+    height: 80px;
+}
 
 .swiper-slide .slide-image video {
     width: 100%;
@@ -7754,14 +7762,32 @@ audio {
     /* .logo-light img {
         display: none;
     } */
-     .main-header.auto-hide-header {
-        left: -60px;
+    .main-header.auto-hide-header {
+        left: -70px;
         top: -10px;
     }
     .slide-title {
         display: none;
     }
-    .logo-light.bottom {
-        display: none;
+    .bottomLogo {
+        /* display: none; */
+        max-width: 30%;
+        margin: auto;
+    }
+    /* .logo-light.bottom {
+        position: fixed;
+        right: 70px;
+        bottom: 30px;
+    }
+    .logo-light.bottom img {
+        height: 80px;
+    } */
+    .swiper-full-page .slider-nav .swiper-button-next svg,
+    .swiper-full-page .slider-nav .swiper-button-prev svg {
+        /* background-color: green; */
+        position: relative;
+        width: 90%;
+        right: 30px;
+        bottom: 100px;
     }
 }
