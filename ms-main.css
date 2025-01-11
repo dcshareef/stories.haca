@@ -7704,10 +7704,10 @@ audio {
     object-position: 50% 38%;
 }
 .swiper-slide .slide-image img.image9 {
-    object-position: 50% 0%;
+    object-position: 50% 3%;
 }
 .swiper-slide .slide-image img.image10 {
-    object-position: 50% 90%;
+    object-position: 50% 91%;
 }
 .swiper-slide .slide-image img.image12 {
     object-position: 50% 40%;
@@ -7719,7 +7719,7 @@ audio {
     object-position: 50% 37%;
 }
 .swiper-slide .slide-image img.image15 {
-    object-position: 50% 43%;
+    object-position: 50% 49%;
 }
 .swiper-slide .slide-image img.image16 {
     object-position: 50% 48%;
@@ -7744,7 +7744,7 @@ audio {
     object-position: 50% 42%;
 }
 .swiper-slide .slide-image img.image23 {
-    object-position: 50% 35%;
+    object-position: 50% 45%;
 }
 .swiper-slide .slide-image img.image24 {
     object-position: 50% 30%;
@@ -7756,6 +7756,37 @@ audio {
     height: 50px;
     width: 100%;
     object-fit: cover;
+}
+.bottomLogo {
+    max-width: 100%;
+    position: relative;
+    bottom: 10px;
+    right: 30px;
+    display: flex;
+    justify-content: end;
+}
+.bottomLogo img {
+    max-width: 14%;
+}
+.slide-title h3,
+.slide-title a {
+    transition: 500ms;
+}
+.slide-title a.slide-link {
+    transition: 1200ms !important;
+}
+.slide-title .slide-cat {
+    transition: 500ms !important;
+}
+.slide-title:hover h3,
+.slide-title:hover .slide-cat,
+.slide-title:hover a.slide-link {
+    opacity: 0;
+}
+.slide-title.visibilityHidden h3,
+.slide-title.visibilityHidden .slide-cat,
+.slide-title.visibilityHidden a.slide-link {
+    visibility: hidden;
 }
 
 @media (max-width: 400px) {
@@ -7774,8 +7805,10 @@ audio {
         max-width: 30%;
         /* margin: auto; */
         position: relative;
-        bottom: 45px;
+        bottom: 60px;
         left: 20px;
+    }.bottomLogo img {
+        max-width: 100%;
     }
     .swiper-full-page .slider-nav .swiper-button-prev {
         top: -110px;
