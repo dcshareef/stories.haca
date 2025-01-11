@@ -7752,6 +7752,35 @@ audio {
 .swiper-slide .slide-image img.image25 {
     object-position: 50% 30%;
 }
+/* .swiper-slide .slide-image img.image26 {
+    object-position: 50% 30%;
+} */
+.swiper-slide .slide-image img.image27 {
+    object-position: 50% 31%;
+}
+.swiper-slide .slide-image img.image28 {
+    object-position: 50% 45%;
+}
+.swiper-slide .slide-image img.image29 {
+    object-position: 50% 43%;
+}
+.swiper-slide .slide-image img.image30 {
+    object-position: 50% 20%;
+    width: 30%;
+}
+.swiper-slide .slide-image img.image31 {
+    object-position: 33% 50%;
+}
+.swiper-slide .slide-image img.image32 {
+    object-position: 33% 50%;
+    width: 30%;
+}
+.swiper-slide .slide-image img.image33 {
+    object-position: 82% 45%;
+}
+
+
+
 .logo-light img {
     height: 50px;
     width: 100%;
@@ -7787,6 +7816,17 @@ audio {
 .slide-title.visibilityHidden .slide-cat,
 .slide-title.visibilityHidden a.slide-link {
     visibility: hidden;
+}
+
+@media (max-width: 576px) {
+    .swiper-slide .slide-image img.image30 {
+        object-position: 50% 20%;
+        width: 100%;
+    }
+    .swiper-slide .slide-image img.image32 {
+        object-position: 33% 50%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
