@@ -7778,11 +7778,23 @@ audio {
 .swiper-slide .slide-image img.image33 {
     object-position: 82% 45%;
 }
+.swiper-slide .slide-image img.image34 {
+    object-position: 50% 42%;
+}
+.swiper-slide .slide-image img.image35 {
+    object-position: 50% 30%;
+    width: 80%;
+}
 
 
 
+
+.main-header.auto-hide-header {
+    left: -80px;
+    top: -10px;
+}
 .logo-light img {
-    height: 50px;
+    height: 70px;
     width: 100%;
     object-fit: cover;
 }
@@ -7820,19 +7832,20 @@ audio {
 
 @media (max-width: 576px) {
     .swiper-slide .slide-image img.image30 {
-        object-position: 50% 20%;
         width: 100%;
     }
     .swiper-slide .slide-image img.image32 {
-        object-position: 33% 50%;
+        width: 100%;
+    }
+    .swiper-slide .slide-image img.image35 {
         width: 100%;
     }
 }
 
 @media (max-width: 400px) {
-    /* .logo-light img {
-        display: none;
-    } */
+    .logo-light img {
+        height: 50px;
+    }
     .main-header.auto-hide-header {
         left: -70px;
         top: -10px;
