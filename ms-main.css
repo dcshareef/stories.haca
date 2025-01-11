@@ -7823,13 +7823,14 @@ audio {
     width: 50%;
 }
 .swiper-slide .slide-image img.image52 {
-    object-position: 50% 30%;
+    object-position: 50% 27%;
+    width: 70%;
 }
 .swiper-slide .slide-image img.image53 {
     object-position: 50% 55%;
 }
 .swiper-slide .slide-image img.image54 {
-    object-position: 50% 35%;
+    object-position: 50% 29%;
 }
 .swiper-slide .slide-image img.image55 {
     object-position: 50% 50%;
@@ -7848,7 +7849,7 @@ audio {
     object-position: 50% 20%;
 }
 .swiper-slide .slide-image img.image60 {
-    object-position: 50% 27%;
+    object-position: 50% 35%;
 }
 .swiper-slide .slide-image img.image61 {
     object-position: 50% 80%;
@@ -7935,6 +7936,9 @@ audio {
         width: 100%;
     }
     .swiper-slide .slide-image img.image61 {
+        width: 100%;
+    }
+    .swiper-slide .slide-image img.image52 {
         width: 100%;
     }
 }
