@@ -7861,6 +7861,10 @@ audio {
 .swiper-slide .slide-image img.image63 {
     object-position: 50% 32%;
 }
+.swiper-slide .slide-image img.image65 {
+    object-position: 50% 39%;
+    width: 30%;
+}
 
 .swiper-slide .slide-image video {
     -webkit-transform: translateZ(0);
@@ -7940,6 +7944,10 @@ audio {
     }
     .swiper-slide .slide-image img.image52 {
         width: 100%;
+    }
+    .swiper-slide .slide-image img.image65 {
+        width: 100%;
+        object-position: 0% 10%;
     }
 }
 
