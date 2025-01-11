@@ -7874,6 +7874,9 @@ audio {
 .swiper-slide .slide-image img.image67 {
     object-position: 50% 25%;
 }
+.swiper-slide .slide-image img.image67 {
+    object-position: 50% 43%;
+}
 
 .swiper-slide .slide-image video {
     -webkit-transform: translateZ(0);
