@@ -179,6 +179,7 @@ function ms_mobile_menu() {
 /*------------------
 Full Page Slider
 -------------------*/
+
 function ms_full_slider() {
     // Fulp Page Carousel
     if ($.exists('.swiper-carousel')) {
@@ -194,6 +195,10 @@ function ms_full_slider() {
             mousewheel: {
                 enabled: true,
                 releaseOnEdges: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
             },
             hashNavigation: {
                 watchState: true,
