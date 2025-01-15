@@ -187,7 +187,7 @@ function ms_full_slider() {
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
             slidesPerColumnFill: 'column',
-            loop: false,
+            loop: true,
             speed: 700,
             freeMode: false,
             grabCursor: true,
@@ -199,7 +199,19 @@ function ms_full_slider() {
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
+                pauseOnMouseEnter: true,
             },
+            on: {
+                autoplayStart: function () {
+                    console.log('Autoplay started');
+                },
+                autoplayStop: function () {
+                    console.log('Autoplay stopped');
+                },
+            },
+            mousewheel: {
+                enabled: false,
+            },            
             hashNavigation: {
                 watchState: true,
             },
@@ -244,36 +256,50 @@ function ms_full_slider() {
 
     // Full Page Fade Effect
     if ($.exists('.swiper-full-page')) {
-        var total_count = $('.swiper-counter').data('counter'),
-            l = $('.swiper-slide').data('autoplay');
-        $('.total-count').html(total_count);
+        var l = $('.swiper-slide').data('autoplay') || { delay: 3000, disableOnInteraction: false };
+
         var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'progressbar',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        autoplay: l,
-        speed: 700,
-        effect: 'fade',
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: false, // Disable autoplay initially
+            speed: 700,
+            effect: 'fade',
             fadeEffect: {
-            crossFade: true
-        },
-        freeMode: false,
-        grabCursor: true,
-        mousewheel: {
-            enabled: true,
-            releaseOnEdges: true,
-        },
-        keyboard: {
-            enabled: true,
-            onlyInViewport: false,
-        },
+                crossFade: true,
+            },
+            freeMode: false,
+            grabCursor: true,
+            mousewheel: {
+                enabled: true,
+                releaseOnEdges: true,
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+        });
+
+        // Start autoplay when the first slide is clicked
+        $('.swiper-slide:first').on('click', function() {
+            swiper.autoplay.start();  // Start autoplay manually
+        });
+
+        // Stop autoplay on mouse enter
+        $('.swiper-container').on('mouseenter', function() {
+            swiper.autoplay.start();
+        });
+
+        // Start autoplay on mouse leave
+        $('.swiper-container').on('mouseleave', function() {
+            swiper.autoplay.start();
         });
     }
 
