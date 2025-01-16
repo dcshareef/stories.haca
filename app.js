@@ -256,7 +256,7 @@ function ms_full_slider() {
 
     // Full Page Fade Effect
     if ($.exists('.swiper-full-page')) {
-        var l = $('.swiper-slide').data('autoplay') || { delay: 3000, disableOnInteraction: false };
+        var l = $('.swiper-slide').data('autoplay');
 
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
@@ -288,17 +288,14 @@ function ms_full_slider() {
         });
 
         // Start autoplay when the first slide is clicked
-        $('.swiper-slide:first').on('click', function() {
+        $('.firstSlide').on('click', function() {
             swiper.autoplay.start();  // Start autoplay manually
         });
-
-        // Stop autoplay on mouse enter
-        $('.swiper-container').on('mouseenter', function() {
+        // Restart autoplay after button interaction
+        document.querySelector('.swiper-button-next').addEventListener('click', () => {
             swiper.autoplay.start();
         });
-
-        // Start autoplay on mouse leave
-        $('.swiper-container').on('mouseleave', function() {
+        document.querySelector('.swiper-button-prev').addEventListener('click', () => {
             swiper.autoplay.start();
         });
     }
